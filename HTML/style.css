@@ -1,0 +1,264 @@
+@import url('./variable.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 86px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    background-color: white;
+    z-index: 1000;
+    justify-content: space-evenly;
+}
+
+.logo, .location, .search-bar, .login, .cart{
+    margin: 0 25px;
+}
+
+.logo a{
+    width: 178px;
+}
+
+.logo svg {
+    width: 134px;
+    height: 30px;
+}
+
+.location-title{
+    font-weight: var(--fw-700);
+    font-size: 18px;
+}
+
+.location-desc{
+    font-size: 14px;
+}
+
+.location .fa-sort-down{
+    transform: translateY(-3px);
+}
+
+.search-bar{
+    width: 40%;
+    height: 46px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    background: rgb(248, 248, 248);
+    color: var(--colour-gray);
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input{
+    width: 100%;
+}
+
+.search-bar input{
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: transparent;
+    width: 100%;
+}
+
+.search-bar .fa-magnifying-glass{
+    width: 20px;
+    color: var(--colour-black);
+    margin-right: 6px;
+}
+
+.login{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+}
+
+.cart button{
+    height: 52px;
+    width: 112px;
+    color: var(--colour-white);
+    background-color: var(--colour-green);
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.cart .fa-cart-shopping{
+    font-size: 20px;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 86px;
+}
+
+.main-container{
+    max-width: 1200px;
+}
+
+.banner-1 img{
+    width: 100%;
+}
+
+.banner-2{
+    display: flex;
+    overflow: auto;
+    margin: 16px;
+    column-gap: 20px;
+}
+
+.banner-2::-webkit-scrollbar{
+    display: none;
+}
+
+.banner-2-img img{
+    width: 335px;
+    height: 195px;
+}
+
+.categories-list{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+.categories-img img{
+    width: 100%;
+}
+.specialized-categories{
+    margin: 0px 14px;
+}
+
+.specialized-categories .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 0;
+}
+
+.specialized-categories .title .category-name{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: rgb(28, 28, 28);
+}
+
+.specialized-categories .title a{
+    text-decoration: none;
+    line-height: 32px;
+    font-size: 20px;
+    color: rgb(12, 131, 31);
+}
+
+.specialized-categories .category-items{
+    display: flex;
+    column-gap: 20px;
+    overflow: auto;
+}
+
+.category-items .item{
+    background: rgb(255, 255, 255);
+    border: 0.5px solid rgb(232, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+    border-radius: 8px;
+    max-width: 179px;
+}
+
+.category-items .item-img{
+    padding-left: 11px;
+    padding-right: 11px;
+    display: flex;
+    justify-content: center;
+}
+
+.category-items .item-img img{
+    width: 140px;
+}
+
+.item-details{
+    padding: 0 12px;
+}
+
+.item-details .timer{
+    font-size: 9px;
+    font-weight: 700;
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    width: 38%;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    column-gap: 2px;
+}
+
+.timer .fa-clock{
+    width: 11px;
+}
+
+.item-name{
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(31, 31, 31);
+    height: 36px;
+    margin-bottom: 6px;
+}
+
+.item-weight {
+    height: 26px;
+    display: flex;
+    align-items: center;
+    color: var(--colour-gray);
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.item-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.item-price button{
+    width: 66px;
+    height: 31px;
+    color: rgb(49, 134, 22);
+    font-weight: 600;
+    background-color: rgb(247, 255, 249);
+    border: 1px solid rgb(49, 134, 22);
+    border-radius: 6px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    background-color: rgb(232, 232, 232);
+}
+
+footer .fa-heart{
+    color: red;
+    margin: 0 4px;
+    margin-top: 1px;
+}
