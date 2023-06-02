@@ -77,7 +77,8 @@
     margin-right: 6px;
 }
 
-.login{
+.login a{
+    text-decoration: none;
     font-size: 18px;
     font-weight: 400;
     color: rgb(54, 54, 54);
@@ -85,6 +86,11 @@
 
 .user{
     display: none;
+}
+
+.cart a{
+    text-decoration: none;
+    color: var(--colour-white);
 }
 
 .cart button{
@@ -101,6 +107,7 @@
     justify-content: center;
     gap: 6px;
 }
+
 
 .cart .fa-cart-shopping{
     font-size: 20px;
@@ -283,7 +290,7 @@ footer .fa-heart{
     .location-desc{
         font-size: 10px;
     }
-    
+
     .main-container {
         max-width: 1020px;
     }
@@ -350,6 +357,8 @@ footer .fa-heart{
         flex-direction: column;
         align-items: start;
         height: 127px;
+        border-bottom: 0px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 10px 0px;
     }
     .login{
         position: fixed;
