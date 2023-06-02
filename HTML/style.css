@@ -1,4 +1,7 @@
 @import url('./variable.css');
+html {
+    scroll-behavior: smooth;
+  }
 
 *{
     padding: 0;
